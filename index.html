@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Horno San Antonio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pastelería Horno San Antonio</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1486427944299-d1955d23e34d') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.btn {
+  background: #D4AF37;
+  padding: 15px 25px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  padding: 40px;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+PASTELERÍA HORNO SAN ANTONIO
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Arte en cada bocado</h1>
+    <p>Propuesta digital para modernizar su negocio</p>
+    <button class="btn" onclick="contactar()">Solicitar presupuesto</button>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Nuestra Historia</h2>
+  <p>Tradición, calidad y pasión en cada producto artesanal.</p>
+</section>
+
+<section class="section">
+  <h2>Productos</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b">
+      <h3>Dulcería</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636">
+      <h3>Repostería</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff">
+      <h3>Bollería</h3>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Ubicación</h2>
+  <p>Valdepeñas, Ciudad Real</p>
+</section>
+
+<footer>
+© 2026 Pastelería Horno San Antonio
+</footer>
+
+<script>
+function contactar() {
+  window.open("https://wa.me/34600000000?text=Hola%20quiero%20información");
+}
+</script>
+
+</body>
 </html>
